@@ -1,3 +1,6 @@
 {
-  "parent": "tiramisu:block/tiramisu"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tiramisu:item/tiramisu"
+  }
 }
