@@ -12,7 +12,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/tiramisu/icon.png",
+  "icon": "assets/tiramisu/tiramisu_logo.png",
 
   "environment": "*",
   "entrypoints": {
