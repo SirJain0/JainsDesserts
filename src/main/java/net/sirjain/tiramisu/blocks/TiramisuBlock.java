@@ -20,7 +20,14 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
 public class TiramisuBlock extends CakeBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(3, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(5, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(7, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(9, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(11, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_7 = Block.createCuboidShape(12, 0, 2, 14, 7, 14);
+    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] {SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_7};
 
     public TiramisuBlock(Settings settings) {
         super(settings);
@@ -29,7 +36,7 @@ public class TiramisuBlock extends CakeBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return BITES_TO_SHAPE[(state.get(BITES))];
     }
 
     protected static ActionResult tryEat(WorldAccess world, BlockPos pos, BlockState state, PlayerEntity player) {
