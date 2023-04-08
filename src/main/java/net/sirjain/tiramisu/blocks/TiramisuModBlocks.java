@@ -1,4 +1,4 @@
-package net.sirjain.tiramisu.register;
+package net.sirjain.tiramisu.blocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
