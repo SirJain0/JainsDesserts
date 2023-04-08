@@ -1,7 +1,25 @@
 {
   "variants": {
-    "": {
+    "bites=0": {
       "model": "tiramisu:block/tiramisu"
+    },
+    "bites=1": {
+      "model": "tiramisu:block/tiramisu_variant_1"
+    },
+    "bites=2": {
+      "model": "tiramisu:block/tiramisu_variant_2"
+    },
+    "bites=3": {
+      "model": "tiramisu:block/tiramisu_variant_3"
+    },
+    "bites=4": {
+      "model": "tiramisu:block/tiramisu_variant_4"
+    },
+    "bites=5": {
+      "model": "tiramisu:block/tiramisu_variant_5"
+    },
+    "bites=6": {
+      "model": "tiramisu:block/tiramisu_variant_6"
     }
   }
 }
