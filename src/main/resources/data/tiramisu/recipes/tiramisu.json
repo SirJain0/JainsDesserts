@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "SSS",
+    " C "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:cake"
+    }
+  },
+  "result": {
+    "item": "tiramisu:tiramisu",
+    "count": 1
+  }
+}
