@@ -17,9 +17,6 @@
     },
     "bites=5": {
       "model": "tiramisu:block/tiramisu_variant_5"
-    },
-    "bites=6": {
-      "model": "tiramisu:block/tiramisu_variant_6"
     }
   }
 }

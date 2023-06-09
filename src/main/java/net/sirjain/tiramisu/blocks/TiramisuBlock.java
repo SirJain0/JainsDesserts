@@ -21,12 +21,12 @@ import net.minecraft.world.event.GameEvent;
 
 public class TiramisuBlock extends CakeBlock {
     public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 3, 14, 7, 14);
-    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 5, 14, 7, 14);
-    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(2, 0, 7, 14, 7, 14);
-    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(2, 0, 9, 14, 7, 14);
-    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(2, 0, 11, 14, 7, 14);
-    public static final VoxelShape SHAPE_7 = Block.createCuboidShape(2, 0, 12, 14, 7, 14);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 6, 14, 7, 14);
+    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
+    public static final VoxelShape SHAPE_7 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
     public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] {SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_7};
 
     public TiramisuBlock(Settings settings) {
@@ -50,7 +50,7 @@ public class TiramisuBlock extends CakeBlock {
             int bitesState = state.get(BITES);
             world.emitGameEvent(player, GameEvent.EAT, pos);
 
-            if (bitesState < 6) {
+            if (bitesState < 5) {
                 world.setBlockState(pos, state.with(BITES, bitesState + 1), 3);
             } else {
                 world.removeBlock(pos, false);

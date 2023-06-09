@@ -18,5 +18,13 @@
 				"down": {"uv": [6, 6, 0, 12], "texture": "#1"}
 			}
 		}
+	],
+	"groups": [
+		{
+			"name": "tiramisu",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
 	]
 }

@@ -7,6 +7,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.sirjain.tiramisu.TiramisuMod;
 import net.sirjain.tiramisu.blocks.TiramisuModBlocks;
@@ -35,7 +36,7 @@ public class TiramisuModItems {
     }
 
 
-    public static void addItemToTab(ItemGroup group, Item item) {
+    public static void addItemToTab(RegistryKey<ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
 }
