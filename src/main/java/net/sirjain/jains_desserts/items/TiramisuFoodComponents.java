@@ -1,4 +1,4 @@
-package net.sirjain.tiramisu.items;
+package net.sirjain.jains_desserts.items;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

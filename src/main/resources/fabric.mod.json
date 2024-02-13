@@ -1,37 +1,40 @@
 {
-  "schemaVersion": 1,
-  "id": "tiramisu",
-  "version": "${version}",
+	"schemaVersion": 1,
+	"id": "jains_deserts",
+	"version": "${version}",
 
-  "name": "Tiramisu",
-  "description": "Adds tiramisu to Minecraft!",
-  "authors": [
-    "SirJain"
-  ],
-  "contact": {
-    "twitter": "https://twitter.com/SirJain2",
-    "discord": "https://discord.gg/wM4CKTbFVN",
-    "sources": "https://github.com/SirJain0/Tiramisu",
-    "issues": "https://github.com/SirJain0/Tiramisu/issues"
-  },
+	"name": "Jain's Desserts",
+	"description": "Adds a bunch of random desserts to Minecraft!",
 
-  "license": "CC0-1.0",
-  "icon": "assets/tiramisu/tiramisu_logo.png",
+	"authors": [
+		"SirJain"
+	],
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.sirjain.tiramisu.TiramisuMod"
-    ]
-  },
+	"contact": {
+		"twitter": "https://twitter.com/SirJain2",
+		"discord": "https://discord.gg/wM4CKTbFVN",
+		"sources": "https://github.com/SirJain0/JainsDesserts",
+		"issues": "https://github.com/SirJain0/JainsDesserts/issues"
+	},
 
-  "depends": {
-    "fabricloader": ">=0.14.17",
-    "fabric-api": "*",
-    "minecraft": ">=1.20",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
-  }
+	"license": "CC0-1.0",
+	"icon": "assets/jains_desserts/jd_logo.png",
+	"environment": "*",
+
+	"entrypoints": {
+		"main": [
+			"net.sirjain.jains_desserts.JainsDesserts"
+		]
+	},
+
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"fabric-api": "*",
+		"minecraft": ">=1.20",
+		"java": ">=17"
+	},
+
+	"suggests": {
+		"another-mod": "*"
+	}
 }

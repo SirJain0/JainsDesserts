@@ -1,4 +1,4 @@
-package net.sirjain.tiramisu.blocks;
+package net.sirjain.jains_desserts.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

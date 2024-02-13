@@ -1,10 +1,10 @@
-package net.sirjain.tiramisu;
+package net.sirjain.jains_desserts;
 
 import net.fabricmc.api.ModInitializer;
-import net.sirjain.tiramisu.blocks.TiramisuModBlocks;
-import net.sirjain.tiramisu.items.TiramisuModItems;
+import net.sirjain.jains_desserts.blocks.TiramisuModBlocks;
+import net.sirjain.jains_desserts.items.TiramisuModItems;
 
-public class TiramisuMod implements ModInitializer {
+public class JainsDesserts implements ModInitializer {
 	public static final String MOD_ID = "tiramisu";
 
 	@Override

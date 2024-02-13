@@ -1,4 +1,4 @@
-package net.sirjain.tiramisu.items;
+package net.sirjain.jains_desserts.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
@@ -9,8 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import net.sirjain.tiramisu.TiramisuMod;
-import net.sirjain.tiramisu.blocks.TiramisuModBlocks;
+import net.sirjain.jains_desserts.JainsDesserts;
+import net.sirjain.jains_desserts.blocks.TiramisuModBlocks;
 
 public class TiramisuModItems {
     public static Item TIRAMISU_BLOCK_ITEM;
@@ -19,13 +19,13 @@ public class TiramisuModItems {
     public static void registerItems() {
         TIRAMISU_BLOCK_ITEM = Registry.register(
                 Registries.ITEM,
-                new Identifier(TiramisuMod.MOD_ID, "tiramisu"),
+                new Identifier(JainsDesserts.MOD_ID, "tiramisu"),
                 new BlockItem(TiramisuModBlocks.TIRAMISU_BLOCK, new Item.Settings())
         );
 
         BITESIZED_TIRAMISU = Registry.register(
                 Registries.ITEM,
-                new Identifier(TiramisuMod.MOD_ID, "bitesized_tiramisu"),
+                new Identifier(JainsDesserts.MOD_ID, "bitesized_tiramisu"),
                 new Item(new Item.Settings().food(TiramisuFoodComponents.BITESIZED_TIRAMISU))
         );
     }
