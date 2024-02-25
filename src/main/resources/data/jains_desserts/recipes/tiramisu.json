@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "SS"
+    "###",
+    "SSS",
+    " C "
   ],
   "key": {
     "#": {
@@ -10,10 +11,13 @@
     },
     "S": {
       "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:cake"
     }
   },
   "result": {
-    "item": "tiramisu:bitesized_tiramisu",
-    "count": 2
+    "item": "jains_desserts:tiramisu",
+    "count": 1
   }
 }

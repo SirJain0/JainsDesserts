@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tiramisu:item/tiramisu"
+    "layer0": "jains_desserts:item/tiramisu"
   }
 }
