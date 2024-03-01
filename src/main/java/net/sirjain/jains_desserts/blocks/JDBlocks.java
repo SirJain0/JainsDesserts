@@ -8,7 +8,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.sirjain.jains_desserts.JainsDesserts;
 
-public class TiramisuModBlocks {
+public class JDBlocks {
     public static Block TIRAMISU_BLOCK;
 
     public static void registerBlocks() {

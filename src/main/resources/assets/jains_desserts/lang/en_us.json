@@ -1,4 +1,11 @@
 {
   "block.jains_desserts.tiramisu": "Tiramisu",
-  "item.jains_desserts.bitesized_tiramisu": "Bitesized Tiramisu"
+
+  "item.jains_desserts.bitesized_tiramisu": "Bitesized Tiramisu",
+  "item.jains_desserts.bitesized_jelly": "Bitesized Jelly",
+  "item.jains_desserts.chocolate_cupcake": "Chocolate Cupcake",
+  "item.jains_desserts.cream_cupcake": "Cream Cupcake",
+  "item.jains_desserts.chocolate_icecream": "Chocolate Icecream",
+  "item.jains_desserts.icecream_sundae": "Icecream Sundae",
+  "item.jains_desserts.suffle": "Suffle"
 }
