@@ -15,6 +15,7 @@ public class JDItems {
     public static Item SWEET_BERRY_PIE_BLOCK_ITEM;
     public static Item BANANA_CREAM_PIE_BLOCK_ITEM;
     public static Item CARROT_CAKE_BLOCK_ITEM;
+    public static Item CHOCOLATE_CAKE_BLOCK_ITEM;
 
     public static Item BITESIZED_TIRAMISU;
     public static Item BITESIZED_JELLY;
@@ -29,6 +30,7 @@ public class JDItems {
         SWEET_BERRY_PIE_BLOCK_ITEM = registerBlockItem("sweet_berry_pie", JDBlocks.SWEET_BERRY_PIE);
         BANANA_CREAM_PIE_BLOCK_ITEM = registerBlockItem("banana_cream_pie", JDBlocks.BANANA_CREAM_PIE);
         CARROT_CAKE_BLOCK_ITEM = registerBlockItem("carrot_cake", JDBlocks.CARROT_CAKE);
+        CHOCOLATE_CAKE_BLOCK_ITEM = registerBlockItem("chocolate_cake", JDBlocks.CHOCOLATE_CAKE);
 
         BITESIZED_TIRAMISU = registerFoodItem("bitesized_tiramisu", JDFoodComponents.BITESIZED_TIRAMISU);
         BITESIZED_JELLY = registerFoodItem("bitesized_jelly", JDFoodComponents.BITESIZED_JELLY);
@@ -57,6 +59,7 @@ public class JDItems {
 
     public static void addItemsToTabs() {
         addItemToTab(TIRAMISU_BLOCK_ITEM);
+        addItemToTab(CHOCOLATE_CAKE_BLOCK_ITEM);
         addItemToTab(SWEET_BERRY_PIE_BLOCK_ITEM);
         addItemToTab(BANANA_CREAM_PIE_BLOCK_ITEM);
         addItemToTab(CARROT_CAKE_BLOCK_ITEM);

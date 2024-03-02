@@ -13,12 +13,14 @@ public class JDBlocks {
     public static Block SWEET_BERRY_PIE;
     public static Block BANANA_CREAM_PIE;
     public static Block CARROT_CAKE;
+    public static Block CHOCOLATE_CAKE;
 
     public static void registerBlocks() {
         TIRAMISU_BLOCK = registerBlock("tiramisu", new TiramisuBlock(getBlockSettings()));
         SWEET_BERRY_PIE = registerBlock("sweet_berry_pie", new PieBlock(getBlockSettings()));
         BANANA_CREAM_PIE = registerBlock("banana_cream_pie", new PieBlock(getBlockSettings()));
         CARROT_CAKE = registerBlock("carrot_cake", new CarrotCakeBlock(getBlockSettings()));
+        CHOCOLATE_CAKE = registerBlock("chocolate_cake", new ChocolateCakeBlock(getBlockSettings()));
     }
 
     public static Block registerBlock(String id, Block block) {
