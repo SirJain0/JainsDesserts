@@ -18,10 +18,10 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
 public class PieBlock extends CakeBlock {
-    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
+    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(1, 0, 1, 15, 5, 15);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(1, 0, 1, 15, 5, 15);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(1, 0, 8, 15, 5, 15);
+    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(1, 0, 8, 8, 5, 15);
     public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_4, SHAPE_4, SHAPE_4 };
 
     public PieBlock(Settings settings) {
