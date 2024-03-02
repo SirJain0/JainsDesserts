@@ -10,5 +10,6 @@ public class JainsDessertsClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		BlockRenderLayerMap.INSTANCE.putBlock(JDBlocks.SWEET_BERRY_PIE, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(JDBlocks.BANANA_CREAM_PIE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(JDBlocks.CARROT_CAKE, RenderLayer.getCutout());
 	}
 }
