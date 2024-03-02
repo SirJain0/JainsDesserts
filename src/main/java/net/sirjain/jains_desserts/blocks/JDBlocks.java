@@ -10,12 +10,24 @@ import net.sirjain.jains_desserts.JainsDesserts;
 
 public class JDBlocks {
     public static Block TIRAMISU_BLOCK;
+    public static Block SWEET_BERRY_PIE;
+    public static Block BANANA_CREAM_PIE;
 
     public static void registerBlocks() {
-        TIRAMISU_BLOCK = Registry.register(
+        TIRAMISU_BLOCK = registerBlock("tiramisu", new TiramisuBlock(getBlockSettings()));
+        SWEET_BERRY_PIE = registerBlock("sweet_berry_pie", new PieBlock(getBlockSettings()));
+        BANANA_CREAM_PIE = registerBlock("banana_cream_pie", new PieBlock(getBlockSettings()));
+    }
+
+    public static Block registerBlock(String id, Block block) {
+        return Registry.register(
                 Registries.BLOCK,
-                new Identifier(JainsDesserts.MOD_ID, "tiramisu"),
-                new TiramisuBlock(AbstractBlock.Settings.create().solid().strength(0.5F).sounds(BlockSoundGroup.WOOL).nonOpaque())
+                new Identifier(JainsDesserts.MOD_ID, id),
+                block
         );
+    }
+
+    public static AbstractBlock.Settings getBlockSettings() {
+        return AbstractBlock.Settings.create().solid().strength(0.5F).sounds(BlockSoundGroup.WOOL).nonOpaque();
     }
 }

@@ -12,6 +12,8 @@ import net.sirjain.jains_desserts.blocks.JDBlocks;
 
 public class JDItems {
     public static Item TIRAMISU_BLOCK_ITEM;
+    public static Item SWEET_BERRY_PIE_BLOCK_ITEM;
+    public static Item BANANA_CREAM_PIE_BLOCK_ITEM;
 
     public static Item BITESIZED_TIRAMISU;
     public static Item BITESIZED_JELLY;
@@ -23,6 +25,8 @@ public class JDItems {
 
     public static void registerItems() {
         TIRAMISU_BLOCK_ITEM = registerBlockItem("tiramisu", JDBlocks.TIRAMISU_BLOCK);
+        SWEET_BERRY_PIE_BLOCK_ITEM = registerBlockItem("sweet_berry_pie", JDBlocks.SWEET_BERRY_PIE);
+        BANANA_CREAM_PIE_BLOCK_ITEM = registerBlockItem("banana_cream_pie", JDBlocks.BANANA_CREAM_PIE);
 
         BITESIZED_TIRAMISU = registerFoodItem("bitesized_tiramisu", JDFoodComponents.BITESIZED_TIRAMISU);
         BITESIZED_JELLY = registerFoodItem("bitesized_jelly", JDFoodComponents.BITESIZED_JELLY);
@@ -51,6 +55,8 @@ public class JDItems {
 
     public static void addItemsToTabs() {
         addItemToTab(TIRAMISU_BLOCK_ITEM);
+        addItemToTab(SWEET_BERRY_PIE_BLOCK_ITEM);
+        addItemToTab(BANANA_CREAM_PIE_BLOCK_ITEM);
 
         addItemToTab(BITESIZED_TIRAMISU);
         addItemToTab(BITESIZED_JELLY);

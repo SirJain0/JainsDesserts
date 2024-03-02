@@ -4,8 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CakeBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stat.Stats;
@@ -19,17 +17,14 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
-public class TiramisuBlock extends CakeBlock {
+public class PieBlock extends CakeBlock {
     public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
     public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
     public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
     public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 6, 14, 7, 14);
-    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
-    public static final VoxelShape SHAPE_7 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
-    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_7 };
+    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_4, SHAPE_4, SHAPE_4 };
 
-    public TiramisuBlock(Settings settings) {
+    public PieBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(BITES, 0));
     }
@@ -44,13 +39,12 @@ public class TiramisuBlock extends CakeBlock {
             return ActionResult.PASS;
         } else {
             player.incrementStat(Stats.EAT_CAKE_SLICE);
-            player.getHungerManager().add(3, 0.1F);
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 8, 0));
+            player.getHungerManager().add(2, 0.3F);
 
             int bitesState = state.get(BITES);
             world.emitGameEvent(player, GameEvent.EAT, pos);
 
-            if (bitesState < 5) {
+            if (bitesState < 3) {
                 world.setBlockState(pos, state.with(BITES, bitesState + 1), Block.NOTIFY_LISTENERS);
             } else {
                 world.removeBlock(pos, false);
