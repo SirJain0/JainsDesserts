@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "jainsdesserts:block/sweet_berry_pie",
-		"particle": "jainsdesserts:block/sweet_berry_pie"
+		"0": "jains_desserts:block/sweet_berry_pie",
+		"particle": "jains_desserts:block/sweet_berry_pie"
 	},
 	"elements": [
 		{
