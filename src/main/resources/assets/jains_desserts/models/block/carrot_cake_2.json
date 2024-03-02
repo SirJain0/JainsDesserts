@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "block/carrot_cake",
-		"particle": "block/carrot_cake"
+		"2": "jains_desserts:block/carrot_cake",
+		"particle": "jains_desserts:block/carrot_cake"
 	},
 	"elements": [
 		{
