@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "big_cake",
-		"particle": "big_cake"
+		"0": "jains_desserts:block/large_cake",
+		"particle": "jains_desserts:block/large_cake"
 	},
 	"elements": [
 		{
