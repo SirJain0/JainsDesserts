@@ -11,6 +11,7 @@ import net.sirjain.jains_desserts.JainsDesserts;
 import net.sirjain.jains_desserts.blocks.JDBlocks;
 
 public class JDItems {
+    public static Item LARGE_CAKE_BLOCK_ITEM;
     public static Item TIRAMISU_BLOCK_ITEM;
     public static Item SWEET_BERRY_PIE_BLOCK_ITEM;
     public static Item BANANA_CREAM_PIE_BLOCK_ITEM;
@@ -26,6 +27,7 @@ public class JDItems {
     public static Item SUFFLE;
 
     public static void registerItems() {
+        LARGE_CAKE_BLOCK_ITEM = registerBlockItem("large_cake", JDBlocks.LARGE_CAKE);
         TIRAMISU_BLOCK_ITEM = registerBlockItem("tiramisu", JDBlocks.TIRAMISU_BLOCK);
         SWEET_BERRY_PIE_BLOCK_ITEM = registerBlockItem("sweet_berry_pie", JDBlocks.SWEET_BERRY_PIE);
         BANANA_CREAM_PIE_BLOCK_ITEM = registerBlockItem("banana_cream_pie", JDBlocks.BANANA_CREAM_PIE);
@@ -58,6 +60,7 @@ public class JDItems {
     }
 
     public static void addItemsToTabs() {
+        addItemToTab(LARGE_CAKE_BLOCK_ITEM);
         addItemToTab(TIRAMISU_BLOCK_ITEM);
         addItemToTab(CHOCOLATE_CAKE_BLOCK_ITEM);
         addItemToTab(SWEET_BERRY_PIE_BLOCK_ITEM);
