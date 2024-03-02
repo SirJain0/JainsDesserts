@@ -9,6 +9,9 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stat.Stats;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.IntProperty;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -19,18 +22,26 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
-public class TiramisuBlock extends CakeBlock {
-    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 6, 14, 7, 14);
-    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
-    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_6 };
+public class LargeCakeBlock extends CakeBlock {
+    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(1, 0, 1, 15, 15, 15);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(1, 0, 1, 15, 12, 15);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(1, 0, 1, 15, 6, 15);
+    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(1, 0, 8, 15, 6, 15);
+    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 8, 15, 6, 15);
+    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_2, SHAPE_3, SHAPE_3, SHAPE_4, SHAPE_5 };
 
-    public TiramisuBlock(Settings settings) {
+    public LargeCakeBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(BITES, 0));
+    }
+
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        return getComparatorOutput(state.get(BITES));
+    }
+
+    public static int getComparatorOutput(int bites) {
+        return (9 - bites) * 2;
     }
 
     @Override
@@ -43,13 +54,12 @@ public class TiramisuBlock extends CakeBlock {
             return ActionResult.PASS;
         } else {
             player.incrementStat(Stats.EAT_CAKE_SLICE);
-            player.getHungerManager().add(3, 0.1F);
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 8, 0));
+            player.getHungerManager().add(4, 0.3F);
 
             int bitesState = state.get(BITES);
             world.emitGameEvent(player, GameEvent.EAT, pos);
 
-            if (bitesState < 5) {
+            if (bitesState < 6) {
                 world.setBlockState(pos, state.with(BITES, bitesState + 1), Block.NOTIFY_LISTENERS);
             } else {
                 world.removeBlock(pos, false);

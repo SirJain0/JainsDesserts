@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "jains_desserts:block/chocolate_cake_full"
+    },
+    "bites=1": {
+      "model": "jains_desserts:block/chocolate_cake_2"
+    },
+    "bites=2": {
+      "model": "jains_desserts:block/chocolate_cake_3"
+    },
+    "bites=3": {
+      "model": "jains_desserts:block/chocolate_cake_4"
+    },
+    "bites=4": {
+      "model": "jains_desserts:block/chocolate_cake_5"
+    },
+    "bites=5": {
+      "model": "jains_desserts:block/chocolate_cake_6"
+    }
+  }
+}

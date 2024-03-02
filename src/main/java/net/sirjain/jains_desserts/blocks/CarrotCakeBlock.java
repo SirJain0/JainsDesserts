@@ -19,16 +19,13 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
-public class TiramisuBlock extends CakeBlock {
-    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 6, 14, 7, 14);
-    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
-    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_6 };
+public class CarrotCakeBlock extends CakeBlock {
+    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(4, 0, 2, 12, 6, 14);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(4, 0, 6, 12, 6, 14);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(4, 0, 10, 12, 6, 14);
+    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_3, SHAPE_3, SHAPE_3, SHAPE_3 };
 
-    public TiramisuBlock(Settings settings) {
+    public CarrotCakeBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(BITES, 0));
     }
@@ -49,7 +46,7 @@ public class TiramisuBlock extends CakeBlock {
             int bitesState = state.get(BITES);
             world.emitGameEvent(player, GameEvent.EAT, pos);
 
-            if (bitesState < 5) {
+            if (bitesState < 2) {
                 world.setBlockState(pos, state.with(BITES, bitesState + 1), Block.NOTIFY_LISTENERS);
             } else {
                 world.removeBlock(pos, false);

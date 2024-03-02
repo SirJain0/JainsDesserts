@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "jains_desserts:block/sweet_berry_pie_full"
+    },
+    "bites=1": {
+      "model": "jains_desserts:block/sweet_berry_pie_2"
+    },
+    "bites=2": {
+      "model": "jains_desserts:block/sweet_berry_pie_3"
+    },
+    "bites=3": {
+      "model": "jains_desserts:block/sweet_berry_pie_4"
+    }
+  }
+}

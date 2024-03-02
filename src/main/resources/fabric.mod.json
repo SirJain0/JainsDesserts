@@ -24,6 +24,9 @@
 	"entrypoints": {
 		"main": [
 			"net.sirjain.jains_desserts.JainsDesserts"
+		],
+		"client": [
+			"net.sirjain.jains_desserts.client.JainsDessertsClient"
 		]
 	},
 

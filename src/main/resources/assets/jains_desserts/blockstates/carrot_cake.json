@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "jains_desserts:block/carrot_cake_full"
+    },
+    "bites=1": {
+      "model": "jains_desserts:block/carrot_cake_2"
+    },
+    "bites=2": {
+      "model": "jains_desserts:block/carrot_cake_3"
+    }
+  }
+}

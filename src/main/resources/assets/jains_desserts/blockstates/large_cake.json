@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "jains_desserts:block/large_cake_full"
+    },
+    "bites=1": {
+      "model": "jains_desserts:block/large_cake_2"
+    },
+    "bites=2": {
+      "model": "jains_desserts:block/large_cake_4"
+    },
+    "bites=3": {
+      "model": "jains_desserts:block/large_cake_6"
+    },
+    "bites=4": {
+      "model": "jains_desserts:block/large_cake_7"
+    },
+    "bites=5": {
+      "model": "jains_desserts:block/large_cake_8"
+    },
+    "bites=6": {
+      "model": "jains_desserts:block/large_cake_9"
+    }
+  }
+}

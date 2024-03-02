@@ -19,16 +19,14 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
-public class TiramisuBlock extends CakeBlock {
-    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 2, 14, 7, 14);
-    public static final VoxelShape SHAPE_5 = Block.createCuboidShape(8, 0, 6, 14, 7, 14);
-    public static final VoxelShape SHAPE_6 = Block.createCuboidShape(8, 0, 10, 14, 7, 14);
-    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_5, SHAPE_6, SHAPE_6 };
+public class ChocolateCakeBlock extends CakeBlock {
+    public static final VoxelShape SHAPE_1 = Block.createCuboidShape(1, 0, 1, 15, 6, 15);
+    public static final VoxelShape SHAPE_2 = Block.createCuboidShape(1, 0, 6, 15, 6, 15);
+    public static final VoxelShape SHAPE_3 = Block.createCuboidShape(1, 0, 11, 15, 6, 15);
+    public static final VoxelShape SHAPE_4 = Block.createCuboidShape(8, 0, 11, 15, 6, 15);
+    public static VoxelShape[] BITES_TO_SHAPE = new VoxelShape[] { SHAPE_1, SHAPE_1, SHAPE_2, SHAPE_2, SHAPE_3, SHAPE_4, SHAPE_4 };
 
-    public TiramisuBlock(Settings settings) {
+    public ChocolateCakeBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(BITES, 0));
     }

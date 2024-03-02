@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jains_desserts:item/banana_cream_pie"
+  }
+}
