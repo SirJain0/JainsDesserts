@@ -1,6 +1,6 @@
-# Tiramisu
+# Jain's Desserts
 
-<img width="424" alt="tiramisu-gaLLERY" src="https://github.com/SirJain0/Tiramisu/assets/94301223/4b552e07-81a1-4db3-81e2-bd4c7fffd876">
+![JainsDessertsCollage](https://github.com/SirJain0/JainsDesserts/assets/94301223/c574ed45-5c31-445d-9c0d-eeaeed4c393e)
 
 ## General Info
 
