@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "SS"
+    "SLS",
+    "LSL",
+    "SLS"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cocoa_beans"
-    },
     "S": {
       "item": "minecraft:sugar"
+    },
+    "L": {
+      "item": "minecraft:lime_dye"
     }
   },
   "result": {
-    "item": "jains_desserts:bitesized_tiramisu",
+    "item": "jains_desserts:bitesized_jelly",
     "count": 3
   }
 }

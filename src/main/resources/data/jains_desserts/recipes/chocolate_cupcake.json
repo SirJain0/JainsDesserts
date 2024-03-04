@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "MEM",
-    "SSS",
-    "CCC"
+    "CCC",
+    " W "
   ],
   "key": {
     "M": {
@@ -12,15 +12,15 @@
     "E": {
       "item": "minecraft:egg"
     },
-    "S": {
-      "item": "minecraft:sugar"
-    },
     "C": {
       "item": "minecraft:cocoa_beans"
+    },
+    "W": {
+      "item": "minecraft:wheat"
     }
   },
   "result": {
-    "item": "jains_desserts:tiramisu",
-    "count": 1
+    "item": "jains_desserts:chocolate_cupcake",
+    "count": 2
   }
 }

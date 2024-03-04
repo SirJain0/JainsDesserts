@@ -3,7 +3,7 @@
   "pattern": [
     "MEM",
     "SSS",
-    "CCC"
+    "WWW"
   ],
   "key": {
     "M": {
@@ -12,15 +12,15 @@
     "E": {
       "item": "minecraft:egg"
     },
+    "W": {
+      "item": "minecraft:wheat"
+    },
     "S": {
       "item": "minecraft:sugar"
-    },
-    "C": {
-      "item": "minecraft:cocoa_beans"
     }
   },
   "result": {
-    "item": "jains_desserts:tiramisu",
+    "item": "jains_desserts:banana_cream_pie",
     "count": 1
   }
 }

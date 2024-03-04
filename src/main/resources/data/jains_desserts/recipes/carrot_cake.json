@@ -1,26 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "MEM",
-    "SSS",
-    "CCC"
+    "MSM",
+    "CCC",
+    "WWW"
   ],
   "key": {
     "M": {
       "item": "minecraft:milk_bucket"
     },
-    "E": {
-      "item": "minecraft:egg"
-    },
     "S": {
       "item": "minecraft:sugar"
     },
     "C": {
-      "item": "minecraft:cocoa_beans"
+      "item": "minecraft:carrot"
+    },
+    "W": {
+      "item": "minecraft:wheat"
     }
   },
   "result": {
-    "item": "jains_desserts:tiramisu",
+    "item": "jains_desserts:carrot_cake",
     "count": 1
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cake"
+    }
+  },
+  "result": {
+    "item": "jains_desserts:large_cake",
+    "count": 1
+  }
+}
