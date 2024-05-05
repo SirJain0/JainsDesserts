@@ -1,0 +1,16 @@
+{
+  "block.jains_desserts.large_cake": "大蛋糕",
+  "block.jains_desserts.tiramisu": "提拉米苏",
+  "block.jains_desserts.sweet_berry_pie": "甜浆果派",
+  "block.jains_desserts.banana_cream_pie": "香蕉奶油派",
+  "block.jains_desserts.carrot_cake": "胡萝卜蛋糕",
+  "block.jains_desserts.chocolate_cake": "巧克力蛋糕",
+
+  "item.jains_desserts.bitesized_tiramisu": "小块提拉米苏",
+  "item.jains_desserts.bitesized_jelly": "小块果冻",
+  "item.jains_desserts.chocolate_cupcake": "巧克力纸杯蛋糕",
+  "item.jains_desserts.cream_cupcake": "奶油纸杯蛋糕",
+  "item.jains_desserts.chocolate_icecream": "巧克力冰淇淋",
+  "item.jains_desserts.icecream_sundae": "冰淇淋圣代",
+  "item.jains_desserts.suffle": "奶酥"
+}
