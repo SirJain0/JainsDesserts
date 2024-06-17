@@ -1,0 +1,16 @@
+{
+    "block.jains_desserts.large_cake": "Большой торт",
+    "block.jains_desserts.tiramisu": "Тирамису",
+    "block.jains_desserts.sweet_berry_pie": "Ягодный пирог",
+    "block.jains_desserts.banana_cream_pie": "Кремовый пирог с бананами",
+    "block.jains_desserts.carrot_cake": "Морковный торт",
+    "block.jains_desserts.chocolate_cake": "Шоколадный торт",
+
+    "item.jains_desserts.bitesized_tiramisu": "Мини-тирамису",
+    "item.jains_desserts.bitesized_jelly": "Мини-желе",
+    "item.jains_desserts.chocolate_cupcake": "Шоколадный кекс",
+    "item.jains_desserts.cream_cupcake": "Сливочный кекс",
+    "item.jains_desserts.chocolate_icecream": "Шоколадное мороженое",
+    "item.jains_desserts.icecream_sundae": "Парфе",
+    "item.jains_desserts.suffle": "Суфле"
+}
