@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     " C ",
     "CCC"
@@ -10,7 +11,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:large_cake",
+    "id": "jains_desserts:large_cake",
     "count": 1
   }
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     "MSM",
     "CCC",
@@ -20,7 +21,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:carrot_cake",
+    "id": "jains_desserts:carrot_cake",
     "count": 1
   }
 }

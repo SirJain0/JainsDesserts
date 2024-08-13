@@ -2,6 +2,7 @@ package net.sirjain.jains_desserts.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -46,7 +47,7 @@ public class JDItems {
     public static BlockItem registerBlockItem(String id, Block block) {
         return Registry.register(
                 Registries.ITEM,
-                new Identifier(JainsDesserts.MOD_ID, id),
+                Identifier.of(JainsDesserts.MOD_ID, id),
                 new BlockItem(block, new Item.Settings())
         );
     }
@@ -54,7 +55,7 @@ public class JDItems {
     public static Item registerFoodItem(String id, FoodComponent foodComponent) {
         return Registry.register(
                 Registries.ITEM,
-                new Identifier(JainsDesserts.MOD_ID, id),
+                Identifier.of(JainsDesserts.MOD_ID, id),
                 new Item(new Item.Settings().food(foodComponent))
         );
     }

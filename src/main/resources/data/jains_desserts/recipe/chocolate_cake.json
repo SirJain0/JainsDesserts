@@ -1,23 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
-    "SSS",
+    "MSM",
     "CCC",
-    " B "
+    "WWW"
   ],
   "key": {
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
     "S": {
       "item": "minecraft:sugar"
     },
     "C": {
       "item": "minecraft:cocoa_beans"
     },
-    "B": {
-      "item": "minecraft:bowl"
+    "W": {
+      "item": "minecraft:wheat"
     }
   },
   "result": {
-    "item": "jains_desserts:chocolate_icecream",
-    "count": 2
+    "id": "jains_desserts:chocolate_cake",
+    "count": 1
   }
 }

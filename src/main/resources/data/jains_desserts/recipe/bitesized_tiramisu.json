@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     "##",
     "SS"
@@ -13,7 +14,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:bitesized_tiramisu",
+    "id": "jains_desserts:bitesized_tiramisu",
     "count": 3
   }
 }

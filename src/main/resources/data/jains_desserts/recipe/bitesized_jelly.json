@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     "SLS",
     "LSL",
@@ -14,7 +15,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:bitesized_jelly",
+    "id": "jains_desserts:bitesized_jelly",
     "count": 3
   }
 }

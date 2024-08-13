@@ -28,7 +28,7 @@ public class JDBlocks {
     public static Block registerBlock(String id, Block block) {
         return Registry.register(
                 Registries.BLOCK,
-                new Identifier(JainsDesserts.MOD_ID, id),
+                Identifier.of(JainsDesserts.MOD_ID, id),
                 block
         );
     }

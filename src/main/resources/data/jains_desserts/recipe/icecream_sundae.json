@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    " * ",
+    "CSC",
+    " B "
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:sweet_berries"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "result": {
+    "id": "jains_desserts:icecream_sundae",
+    "count": 2
+  }
+}

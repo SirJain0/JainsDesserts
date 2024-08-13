@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     "MEM",
     "SSS",
@@ -20,7 +21,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:cream_cupcake",
+    "id": "jains_desserts:cream_cupcake",
     "count": 2
   }
 }

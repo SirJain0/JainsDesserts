@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
     "CCC",
     "CSC"
@@ -13,7 +14,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:suffle",
+    "id": "jains_desserts:suffle",
     "count": 1
   }
 }

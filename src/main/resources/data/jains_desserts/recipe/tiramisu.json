@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "food",
   "pattern": [
-    " * ",
-    "CSC",
-    " B "
+    "MEM",
+    "SSS",
+    "CCC"
   ],
   "key": {
-    "*": {
-      "item": "minecraft:sweet_berries"
+    "M": {
+      "item": "minecraft:milk_bucket"
     },
-    "B": {
-      "item": "minecraft:bowl"
+    "E": {
+      "item": "minecraft:egg"
     },
     "S": {
       "item": "minecraft:sugar"
@@ -20,7 +21,7 @@
     }
   },
   "result": {
-    "item": "jains_desserts:icecream_sundae",
-    "count": 2
+    "id": "jains_desserts:tiramisu",
+    "count": 1
   }
 }
